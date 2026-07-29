@@ -243,3 +243,71 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* 5. SECCIÓN DE PATROCINADORES */
+.sponsors-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sponsors-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.sponsor-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  max-width: 150px;
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-2px);
+}
+
+.sponsor-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Efecto sutil: ligeramente atenúa los logos para integrarlos al tema oscuro */
+  opacity: 0.85;
+  filter: grayscale(20%);
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Ajuste móvil */
+@media (max-width: 480px) {
+  .sponsor-card {
+    min-width: 90px;
+    height: 50px;
+    padding: 8px;
+  }
+}
