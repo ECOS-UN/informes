@@ -89,7 +89,57 @@
         <span class="icon">❓</span>
         <span>Mesa de Ayuda / DUDAS</span>
       </button>
+    </div>
 
+    <!-- =================================================== -->
+    <!-- NUEVA SECCIÓN: GALERÍA Y EDICIONES ANTERIORES       -->
+    <!-- =================================================== -->
+    <div class="carousel-section">
+      <div class="carousel-title">Ediciones Anteriores</div>
+      <p class="carousel-subtitle">Un vistazo al impacto, la innovación y la comunidad en eventos previos</p>
+
+      <div class="carousel-container">
+        <!-- Diapositivas -->
+        <div class="carousel-track" id="carouselTrack">
+          
+          <div class="carousel-slide active">
+            <img src="evento/evento01.JPG" alt="ECOS Edición Anterior 1">
+            <div class="slide-caption">Presentación de Proyectos de Innovación</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="evento/evento02.JPG" alt="ECOS Edición Anterior 2">
+            <div class="slide-caption">Exposición de Prototipos de Ingeniería</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="evento/evento03.JPG" alt="ECOS Edición Anterior 3">
+            <div class="slide-caption">Comunidad Estudiantil y Evaluación de Jueces</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="evento/evento04.JPG" alt="ECOS Edición Anterior 4">
+            <div class="slide-caption">Presentación de Proyectos de Innovación</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="evento/evento05.JPG" alt="ECOS Edición Anterior 5">
+            <div class="slide-caption">Exposición de Prototipos de Ingeniería</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="evento/evento06.JPG" alt="ECOS Edición Anterior 6">
+            <div class="slide-caption">Exposición de Propuestas Sociales</div>
+          </div>
+
+        </div>
+
+        <!-- Botones de Navegación -->
+        <button class="carousel-arrow prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-arrow next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+        <!-- Puntos/Indicadores -->
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+      </div>
     </div>
 
     <!-- =================================================== -->

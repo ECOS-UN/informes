@@ -43,3 +43,55 @@
         event.target.classList.remove('active');
       }
     }
+
+    // ===================================================
+// 3. CARRUSEL DE IMÁGENES
+// ===================================================
+let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.dot');
+let carouselInterval;
+
+function showSlide(index) {
+  if (slides.length === 0) return;
+
+  if (index >= slides.length) {
+    currentSlideIndex = 0;
+  } else if (index < 0) {
+    currentSlideIndex = slides.length - 1;
+  } else {
+    currentSlideIndex = index;
+  }
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === currentSlideIndex);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentSlideIndex);
+  });
+}
+
+function moveSlide(step) {
+  showSlide(currentSlideIndex + step);
+  resetCarouselTimer();
+}
+
+function goToSlide(index) {
+  showSlide(index);
+  resetCarouselTimer();
+}
+
+function startCarouselTimer() {
+  carouselInterval = setInterval(() => {
+    showSlide(currentSlideIndex + 1);
+  }, 4000); // Cambia cada 4 segundos
+}
+
+function resetCarouselTimer() {
+  clearInterval(carouselInterval);
+  startCarouselTimer();
+}
+
+// Iniciar temporizador automático al cargar
+startCarouselTimer();
