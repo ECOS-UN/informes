@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Próximamente - ECOS MA 2026</title>
+  <title>Próximamente - ECOS SD 2026</title>
   <link rel="icon" type="image/png" href="img/LogoECOS.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +19,7 @@
     </div>
 
     <h1>El evento de fin de tetramestre está por comenzar</h1>
-    <p class="subtext">Falta muy poco para dar inicio a nuestro evento ECOS VERANO 2026</p>
+    <p class="subtext">Falta muy poco para dar inicio a nuestro evento ECOS INVIERNO 2026 (24/Nov/2026)</p>
 
     <!-- CUENTA REGRESIVA -->
     <div class="countdown-grid" id="countdownGrid">
@@ -40,12 +40,20 @@
         <div class="time-label">Seg</div>
       </div>
     </div>
+  
 
-    <!-- BOTONES DE INFORMACIÓN (6 BOTONES) -->
-    <div class="info-section-title">Información para Participantes</div>
+<!-- BOTONES DE INFORMACIÓN -->
+    <div class="info-section-title">Información del Evento y Participantes</div>
     
     <div class="buttons-grid">
-      
+
+      <!-- Botón Destacado Principal (Ocupa las 3 columnas) -->
+      <button class="info-btn info-btn-full" onclick="openModal('modalAbout')">
+        <span class="icon">🌱</span>
+        <span class="btn-main-title">¿Qué es ECOS?</span>
+        <span class="btn-subtitle">Conoce el significado, objetivos y áreas participantes</span>
+      </button>
+
       <!-- Botón 1 -->
       <button class="info-btn" onclick="openModal('modal1')">
         <span class="icon">🎪</span>
@@ -110,6 +118,33 @@
   <!-- =================================================== -->
   <!-- VENTANAS EMERGENTES (MODALES DE INFORMACIÓN)        -->
   <!-- =================================================== -->
+
+<!-- Modal: ¿Qué es ECOS? -->
+<div class="modal-overlay" id="modalAbout">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 class="modal-title">🌱 ¿Qué es ECOS?</h3>
+      <button class="close-btn" onclick="closeModal('modalAbout')">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>ECOS … Evento Institucional de Cierre de Tetramestre</strong></p>
+      <p>El término "ecos" se refiere a la reverberación de un sonido, pero también simboliza el impacto y la resonancia que las ideas innovadoras tienen en el mundo. En el contexto de este evento, ECOS representa la propagación de las enseñanzas obtenidas en clases, es el resultado de las voces de la innovación, la tecnología, la sustentabilidad aplicadas al emprendimiento.</p>
+      <p>ECOS es un escaparate universitario que impulsa el <strong>Emprendedurismo</strong>, celebra la <strong>Creatividad</strong>, abre <strong>Oportunidades</strong> y promueve la <strong>Sustentabilidad</strong> como eje transversal del desarrollo.</p>
+
+      <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+
+      <p><b>Objetivos del evento:</b></p>
+      <ul>
+        <li>Dar visibilidad a los proyectos finales de los estudiantes y al talento estudiantil, promover la innovación y creatividad académica.</li>
+        <li>Reforzar el prestigio académico de la UN.</li>
+        <li>Inspirar a más estudiantes a desarrollar soluciones de impacto.</li>
+      </ul>
+
+      <p><b>Áreas a participar:</b></p>
+      <p>Humanidades, Ingeniería, Tecnologías de Información, Psicología, Leyes y Preparatoria.</p>
+    </div>
+  </div>
+</div>
 
 <!-- Modal 1: Stand con Imagen -->
 <div class="modal-overlay" id="modal1">

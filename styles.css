@@ -311,3 +311,107 @@
     padding: 8px;
   }
 }
+
+/* 6. SECCIÓN ¿QUÉ ES ECOS? */
+.about-ecos-section {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 25px 20px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-text {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+}
+
+.about-block h3 {
+  font-size: 1rem;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.about-block ul {
+  padding-left: 20px;
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.about-block li {
+  margin-bottom: 6px;
+}
+
+.areas-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+}
+
+.areas-tags span {
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #38bdf8;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* BOTÓN DESTACADO COMPLETO (ANCHO TOTAL) */
+.info-btn-full {
+  grid-column: 1 / -1; /* Ocupa de la primera a la última columna */
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(30, 41, 59, 0.6) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 18px 20px;
+}
+
+.info-btn-full:hover {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.25) 0%, rgba(30, 41, 59, 0.8) 100%);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.2);
+}
+
+/* TÍTULO Y SUBTÍTULO DEL BOTÓN DESTACADO */
+.btn-main-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.5px;
+}
+
+.btn-subtitle {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  font-weight: 400;
+}
+
+/* AJUSTE RESPONSIVO PARA DISPOSITIVOS MÓVILES */
+@media (max-width: 650px) {
+  .info-btn-full {
+    grid-column: 1 / -1;
+  }
+}

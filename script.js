@@ -1,5 +1,5 @@
     // 1. CUENTA REGRESIVA
-    const TARGET_DATE_STRING = "2026-07-30T18:00:00-06:00"; // Ajusta tu fecha
+    const TARGET_DATE_STRING = "2026-11-24T18:00:00-06:00"; // Ajusta tu fecha
     const targetDate = new Date(TARGET_DATE_STRING).getTime();
 
     function updateCountdown() {
